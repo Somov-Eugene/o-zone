@@ -1,0 +1,25 @@
+{
+  "name": "o-zone",
+  "version": "1.0.0",
+  "description": "Учебный проект GLO ACADEMY: интенсив \"Свой Ozon на JS\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Somov-Eugene/o-zone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Somov-Eugene/o-zone/issues"
+  },
+  "homepage": "https://github.com/Somov-Eugene/o-zone#readme",
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
