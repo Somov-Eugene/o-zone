@@ -1,10 +1,12 @@
+import getData from "./getData";
+import renderGoods from "./renderGoods";
+import { searchFilter } from './filters';
+
 const search = () => {
   const searchInput = document.querySelector(".search-wrapper_input");
-  const searchBtn = document.querySelector(".search-btn > button");
 
-  searchBtn.addEventListener("click", () => {
-    console.log(searchInput.value);
-    searchInput.value = "";
+  searchInput.addEventListener("input", (event) => {
+    getData().then((data) => renderGoods(searchFilter(data, event.target.value)));
   });
 };
 
