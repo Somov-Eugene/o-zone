@@ -8,7 +8,6 @@ const catalog = () => {
   const catalogModalItem = document.querySelectorAll(".catalog li");
   let isOpen = false;
 
-
   btnCatalog.addEventListener("click", () => {
     isOpen = !isOpen;
     catalogModal.style.display = isOpen ? "block" : "";
